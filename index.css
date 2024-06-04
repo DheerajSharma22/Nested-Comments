@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: coral;
+}
+
+li {
+  list-style: none;
+}
+
+button, input[type="submit"] {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.main-wrapper {
+  padding: 5rem 0;
+  width: 100vw;
+  height: 100%;
+}
+
+.main-wrapper form {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.main-wrapper form input[type="text"] {
+  padding: 1.5rem 2rem;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  width: 100%;
+}
+
+.main-wrapper form input[type="submit"] {
+  background-color: rgba(0, 0, 0, 0.356);
+  color: white;
+}
+
+.comments-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 5rem 0;
+  overflow-x: auto;
+  height: 100%;
+}
+
+.comment-box input {
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+  border-radius: .5rem;
+  background-color: #ccc;
+  margin-bottom: 1rem;
+  color: black;
+  width: auto;
+}
+
+
+.comment-box input:disabled {
+  font-size: 2rem;
+  padding: 0;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.comment-actions {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.comment-actions button {
+  padding: 0.5rem 1.5rem;
+  background-color: green;
+  color: white;
+}
+
+.comment-actions button:first-child {
+  background-color: indigo;
+}
+
+.comment-actions button:last-child {
+  background-color: red;
+}
+
+.reply-box {
+  margin-top: 2rem;
+  display: none;
+  align-items: center;
+  gap: 2rem;
+}
+
+.reply-box input {
+  padding: 1rem 2rem!important;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  width: 30%;
+}
+
+.reply-btns {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.reply-btns button {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+}
+
+.active-reply-box {
+    display: flex;
+}
+
+.commentValueBox {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.commentValueActions {
+  display: none;
+  align-items: center;
+  gap: 1rem;
+}
+
+.commentValueActions button {
+  padding: 1rem 2rem;
+}
